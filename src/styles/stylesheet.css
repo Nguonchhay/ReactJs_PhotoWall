@@ -1,0 +1,104 @@
+html {
+    font-size: 10px;
+    font-family: 'sans-serif';
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1 {
+    color: '#000';
+    font-family: 'billabong';
+    font-size: 13rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'billabong';
+    src: url("../fonts/Billabong.ttf");
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.figure {
+    border: 1px solid #d3d3d3;
+    flex-basis: calc(33.333% - 4rem);
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+    padding: 2rem;
+}
+
+.photo {
+    margin: -2rem 0 0 -2rem;
+    width: calc(100% + 4rem);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    padding: 5px 10px;
+}
+
+button:hover {
+    border-color: #d2d2d2;
+}
+
+.add-icon {
+    background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
+    background-size: contain;
+    border: none;
+    display: table;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.photo-create-form {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+}
+
+.photo-create-form input {
+    background: #f2f2f2;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 35px;
+    margin: 0 0  15px;
+    padding: 15px;
+    width: 100%;
+}
+
+.photo-create-form button {
+    background: #065784;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.photo-create-form button:hover {
+    background: #7b8589;
+}
