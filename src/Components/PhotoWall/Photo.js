@@ -25,5 +25,4 @@ Photo.prototype = {
     onRemovePhoto: PropTypes.func.isRequired
 }
 
-
 export default Photo

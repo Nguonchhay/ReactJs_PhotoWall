@@ -5,6 +5,8 @@ import Title from './Title'
 import PhotoWall from './PhotoWall'
 import AddPhoto from './AddPhoto'
 
+import { URL_HOME, URL_PHOTO_CREATE } from './routers'
+
 export default class Main extends Component {
     constructor() {
         super()
@@ -56,7 +58,7 @@ export default class Main extends Component {
         return (
 
         <div>
-            <Route exact path = "/" render={() => (
+            <Route exact path={URL_HOME} render={() => (
                 <div>
                     <Title title="Photowall" />
                     <PhotoWall
@@ -66,7 +68,7 @@ export default class Main extends Component {
                 </div>
             )}/>
 
-            <Route path="/photo-create" render={({ history }) => (
+            <Route path={URL_PHOTO_CREATE} render={({ history }) => (
                 <AddPhoto
                     onAddPhoto={(addedPost) => {
                         this.addPhoto(addedPost)

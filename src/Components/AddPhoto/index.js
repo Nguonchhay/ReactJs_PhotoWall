@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
+import { URL_HOME } from './../routers'
 
 class AddPhoto extends Component {
     
@@ -41,6 +44,14 @@ class AddPhoto extends Component {
 
                         <button> Create</button>
                     </form>
+
+                    <hr />
+
+                    <Link
+                        to={URL_HOME}
+                        >
+                        Back to homepage
+                    </Link>
                 </div>
             </div>
         )

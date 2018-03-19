@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom'
 
 import Photo from './Photo'
 
+import { URL_PHOTO_CREATE } from './../routers'
+
 function PhotoWall(props) {
     return <div>
             <Link
                 className="add-icon"
-                to="/photo-create"
+                to={URL_PHOTO_CREATE}
             />
             
             <div className="photo-grid">
