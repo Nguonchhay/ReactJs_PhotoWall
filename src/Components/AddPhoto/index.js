@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 import { URL_HOME } from './../routers'
 
@@ -20,14 +19,14 @@ class AddPhoto extends Component {
                 imageLink: link,
                 description: description
             }
-            this.props.onAddPhoto(newPost)
+            this.props.addPost(newPost)
+            this.props.onHistory.push('/')
         }
     }
     
     render() {
         return(
             <div>
-                <h1>Potowall</h1>
                 <div className="photo-create-form">
                     <form onSubmit={ this.handleSubmit }>
                         <input
@@ -44,14 +43,6 @@ class AddPhoto extends Component {
 
                         <button> Create</button>
                     </form>
-
-                    <hr />
-
-                    <Link
-                        to={URL_HOME}
-                        >
-                        Back to homepage
-                    </Link>
                 </div>
             </div>
         )
